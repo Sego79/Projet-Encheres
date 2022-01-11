@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+:root {
+	--danger : #F93154;
+	--succes : #00B74A; 
+	--warning : #FFA900;
+	--info : #39C0ED;
+}
+
+main.crud>:not(.listing) form {
+	display: grid;
+	grid-gap: 1em;
+	justify-items: end;
+	justify-content: space-between;
+}
+
+main.crud button, main.crud input:not([type="radio"]):not([type="checkbox"]), main.crud select, main.crud textarea {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+main.crud label {
+	margin-left: 1ex;
+}

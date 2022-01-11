@@ -1,0 +1,98 @@
+/*@author Lucie*/
+@charset "UTF-8";
+
+body{
+	display: flex;
+	flex-direction: column;	
+	color: grey;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: normal;
+	margin:auto;
+	justify-content: space-between;
+}
+
+section{
+	display: flex!important;
+	flex-direction: column;
+	align-items: center;
+	min-height: 90vh;
+	
+}
+.titrepage{
+	text-align: center;
+	font-size: 1.5em;
+	background-color: rgb(80, 215, 88);
+	color: white;
+	border-radius: 30px;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	margin: auto;
+	margin-bottom: 10px;
+
+}
+.titre{
+	border-radius: 30px;
+	width: 600px;
+	box-shadow: 0px -10px 10px -10px #666 inset;
+	padding-bottom:10px;
+}
+article{
+	border-radius: 30px;
+	box-shadow: 0px -10px 10px -10px #666 inset;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 300px;
+	width: 600px;
+}
+img{
+	width: 200px;
+	border-radius: 10px;
+	box-shadow: 4px 4px 4px grey;
+}
+.nom{
+	font-size: 1.5em;
+	text-align: center;
+	align-self: center;
+	padding-bottom: 5px;
+}
+.details{
+	display: flex;
+	flex-direction: row;
+	font-size: 0.9em;
+	justify-content: space-between;
+}
+.infos{
+	margin-left: 20px ;
+}
+.encherir, .annuler_vente {
+	background-color: rgb(80, 215, 88);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.9em;
+	color: white;
+	width: 600px;
+	border-radius: 10px;
+	padding: 5px;
+	margin-top: 10px;
+}
+.offre{
+	border: 1px white solid;
+	padding: 5px;
+	text-align: center;
+}
+.italique{
+	font-style: italic;
+}
+footer
+{
+	text-align: center;
+	background-color:  rgb(80, 215, 88);
+}
+footer-author
+{color: black;}
+

@@ -1,0 +1,50 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: hurin
+  Date: 16/12/2021
+  Time: 04:34
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="<%=request.getContextPath()%>/css/accueil.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/zeh3ulj.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+
+    <meta charset="UTF-8">
+    <title>Liste des enchères</title>
+</head>
+<body>
+<header>
+    <div id="header-logo">
+        <!-- logo -->
+        <a href="<%=request.getContextPath()%>/"> <img
+                src="<%=request.getContextPath()%>/images/logoProjet_Taille_reduite2.png"
+                alt="logo Association" /></a>
+    </div>
+<div style="flex:1"></div>
+    <div id="header-user">
+
+        <a href="<%=request.getContextPath()%>/Vendre">Vendre</a> |
+        <a href="<%=request.getContextPath()%>/MesEncheres">Mes enchères</a>
+
+        <!-- Création / connexion à un compte -->
+        <a href="<%=request.getContextPath()%>/Login"><input
+                type="button" value="se connecter" /></a> | <a
+            href="<%=request.getContextPath()%>/Inscription"><input
+            type="button" value="créer un compte" /></a> | (<a
+            href="<%=request.getContextPath()%>/Profil">
+        ${sessionScope.user_pseudo}</a>)
+        <% if (session.getAttribute("is_admin") != null && (Boolean) session.getAttribute("is_admin")) { %>
+                <a href="<%=request.getContextPath()%>/Admin">admin</a>
+                <%  } %>
+        <a
+                href="<%=request.getContextPath()%>/Deconnexion">Se déconnecter</a>
+    </div>
+</header>

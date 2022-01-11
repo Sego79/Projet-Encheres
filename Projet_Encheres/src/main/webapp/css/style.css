@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+header{
+		background-color: #2bd52f;
+	
+}
+
+#header-logo{
+    float:left;
+    margin :10px;
+}
+
+
+#header-user{
+    float : right;
+    min-width:250px;
+}
+
+
+#header-user-avatar{
+    float : left;
+    width:75px;
+    margin: 10px;
+}
+
+
+
+h1, h2
+{
+	text-align: center;
+	color: rgb(0, 0, 0);
+	 margin-left:auto;
+	margin-right:auto;
+}
+
+#contenu
+{color:black;
+	display-outside: block;
+	text-align: center;
+ 
+}
+
+
+td {
+	border: 1px solid black;
+	margin-left:auto;
+	margin-right:auto;
+	width:500px;
+	height:250px;
+}
+
+footer
+{
+	text-align: center;
+	background-color: green
+}
+footer-author
+{color: black;}

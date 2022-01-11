@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body {font-family: "acumin-pro-semi-condensed", sans-serif}
+
+header{
+	background-color: rgb(80, 215, 88);
+	display: flex;
+	flex-direction: row;
+}
+
+#header-logo{
+
+    margin: 10px;
+
+}
+
+
+#header-user{
+    min-width:250px;
+}
+
+
+#header-user-avatar{
+    float : left;
+    width:75px;
+    margin: 10px;
+}
+
+#Titre_Choix{
+	background-color: rgb(80, 215, 88);
+	border: 1px solid black;
+	border-radius: 40px/100px;
+	margin-left:200px;
+	margin-right:200px;
+}
+
+h1, h2
+{
+	text-align: center;
+	color: black;
+	 margin-left:auto;
+	margin-right:auto;
+	
+}
+
+#listes_deroulantes
+{color:black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: right;
+	 
+}
+
+
+#articles {
+	text-align: center;
+	width:auto;
+	align-items: center;
+	
+}
+
+#position_container{
+    margin-left:auto;
+	margin-right:auto;
+	
+}
+
+	
+
+
+
+
+footer
+{
+	text-align: center;
+	background-color: rgb(80, 215, 88);
+}
+footer-author
+{color: black;}
